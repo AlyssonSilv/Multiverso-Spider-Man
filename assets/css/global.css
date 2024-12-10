@@ -1,0 +1,48 @@
+/* Importação da fonte Poppins com pesos específicos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Definição de variáveis de tema */
+:root {
+  --primary-color: #B9001F; /* Cor primária para destaque */
+  --secondary-color: #FFFFFF; /* Cor secundária padrão (branco) */
+  --background-color: #F9F9F9; /* Cor de fundo padrão */
+  --text-color: #333333; /* Cor do texto padrão */
+  --font-family: 'Poppins', sans-serif; /* Fonte padrão */
+}
+
+/* Estilização global do corpo */
+body {
+  font-family: var(--font-family); /* Usando a variável de fonte */
+  color: var(--text-color); /* Cor de texto padrão */
+  background-color: var(--background-color); /* Cor de fundo padrão */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Melhora a legibilidade */
+  text-rendering: optimizeLegibility; /* Otimiza a renderização do texto */
+  -webkit-font-smoothing: antialiased; /* Suavização para navegadores Webkit */
+}
+
+/* Definição de elementos visuais globais */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color); /* Títulos com cor primária */
+  margin-top: 0; /* Remove margens extras no topo */
+}
+
+a {
+  color: var(--primary-color); /* Links com cor primária */
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%); /* Escurece a cor ao passar o mouse */
+  text-decoration: underline; /* Destaca link no hover */
+}
+
+button, input, textarea, select {
+  font-family: var(--font-family); /* Mantém a consistência de fonte */
+}
+
+img {
+  max-width: 100%; /* Garante que as imagens não extrapolem o container */
+  height: auto;
+}

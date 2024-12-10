@@ -1,0 +1,64 @@
+/* Estilo para botões de link */
+a.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px; /* Define um tamanho de texto consistente */
+  text-transform: uppercase; /* Torna o texto em maiúsculas para destaque */
+  font-weight: bold; /* Destaca o texto */
+  transition: transform 0.2s ease, color 0.2s ease; /* Adiciona animação ao hover */
+}
+
+a.link-button:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o botão no hover */
+  color: var(--primary-color); /* Troca a cor do texto no hover */
+}
+
+/* Ícone circular do botão */
+a.link-button .icon {
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  background-color: var(--primary-color);
+  border: solid 1px white;
+  background-clip: content-box;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Efeito de interação */
+}
+
+a.link-button:hover .icon {
+  background-color: white; /* Altera a cor de fundo no hover */
+  transform: scale(1.1); /* Aumenta levemente o ícone */
+}
+
+a.link-button .icon .play-icon {
+  border: solid 7px white;
+  width: 0;
+  height: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin-right: -7px; /* Alinha o ícone adequadamente */
+  transition: border-color 0.2s ease; /* Transição suave para as bordas */
+}
+
+a.link-button:hover .icon .play-icon {
+  border-color: var(--primary-color); /* Muda a cor do triângulo no hover */
+}
+
+/* Rótulo do botão */
+a.link-button .label {
+  margin-left: 10px;
+  font-size: 14px; /* Ajusta o tamanho da fonte para o texto do rótulo */
+  letter-spacing: 0.5px; /* Melhora a legibilidade */
+  transition: color 0.2s ease; /* Efeito suave no hover */
+}
+
+a.link-button:hover .label {
+  color: var(--primary-color); /* Troca a cor do texto no hover */
+}

@@ -1,0 +1,67 @@
+/* Reset básico para elementos comuns */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box; /* Inclui padding e border nas dimensões totais do elemento */
+}
+
+/* Corpo do documento */
+body {
+  font-family: "Poppins", sans-serif; /* Fonte padrão */
+  font-size: 16px; /* Tamanho base da fonte */
+  color: #FFF; /* Cor de texto padrão */
+  background-color: #000; /* Fundo padrão para contraste */
+  line-height: 1.5; /* Melhora legibilidade */
+  text-rendering: optimizeLegibility; /* Melhora a renderização de texto em navegadores modernos */
+}
+
+/* Links */
+a {
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  text-decoration: none; /* Remove sublinhado padrão */
+  cursor: pointer; /* Adiciona indicação de interatividade */
+}
+
+a:hover, a:focus {
+  text-decoration: underline; /* Adiciona destaque ao passar o mouse ou ao focar */
+  outline: none; /* Remove borda de foco padrão */
+}
+
+/* Listas */
+ul, ol {
+  list-style: none; /* Remove marcadores e numeração padrão */
+  padding: 0;
+  margin: 0;
+}
+
+/* Imagens */
+img {
+  display: block; /* Remove o espaçamento extra em elementos inline-block */
+  max-width: 100%; /* Garante que as imagens se ajustem ao container */
+  height: auto; /* Mantém proporções corretas */
+}
+
+/* Elementos de formulário */
+input, textarea, button, select {
+  font-family: inherit; /* Herda a fonte do elemento pai */
+  font-size: inherit; /* Herda o tamanho de fonte do elemento pai */
+  color: inherit; /* Herda a cor do texto */
+  background: none; /* Remove estilo padrão do fundo */
+  border: none; /* Remove borda padrão */
+  outline: none; /* Remove borda de foco padrão */
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse; /* Remove espaçamento entre células */
+  border-spacing: 0; /* Remove espaçamento interno entre bordas */
+  width: 100%; /* Ajusta largura para o container */
+}
+
+th, td {
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  padding: 8px; /* Adiciona espaçamento interno */
+}

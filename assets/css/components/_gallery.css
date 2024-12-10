@@ -1,0 +1,31 @@
+/* Estilização da galeria */
+.gallery {
+  padding: 20px 0 20px 0; /* Simplifica o padding */
+}
+
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px; /* Substitui margens individuais para espaçamento mais intuitivo */
+  padding: 0;
+  margin: 0;
+}
+
+.gallery ul li {
+  list-style: none; /* Garante que o estilo padrão da lista seja removido */
+}
+
+.gallery ul li:first-child {
+  margin-left: 0; /* Remove o espaçamento do primeiro item */
+}
+
+.gallery ul li a img {
+  border: 6px solid white; /* Mantém consistência com o restante do projeto */
+  border-radius: 15px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona animação ao hover */
+}
+
+.gallery ul li a img:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem no hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao passar o mouse */
+}

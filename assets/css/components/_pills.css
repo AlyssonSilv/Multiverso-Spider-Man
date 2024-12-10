@@ -1,0 +1,47 @@
+/* Contêiner de pills */
+.pills ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Espaçamento uniforme entre os itens */
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo dos itens (pills) */
+.pills ul li {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px; /* Aumentei o padding para melhor espaçamento interno */
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px; /* Tamanho de texto ajustado para clareza */
+  font-weight: 700; /* Destaca o texto */
+  cursor: pointer; /* Indica interatividade */
+  transition: all 0.3s ease; /* Animação suave para interações */
+}
+
+/* Remove margem extra do primeiro item */
+.pills ul li:first-child {
+  margin-left: 0;
+}
+
+/* Efeito de hover */
+.pills ul li:hover {
+  background-color: white; /* Inverte as cores no hover */
+  color: var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pills ul {
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .pills ul li {
+    margin: 5px 5px; /* Espaçamento reduzido em telas menores */
+    font-size: 12px; /* Texto ligeiramente menor para melhor ajuste */
+  }
+}
